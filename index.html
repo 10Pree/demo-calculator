@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@14.4.0/lib/browser/math.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <p id="result-display" class="display-number numberResult">0</p>
+            <p id="calculator-display" class="display-number numberalCulator">0</p>
+        </div>
+        <div class="container-btn">
+
+                <button class="btn-number" onclick="updateCalculation('1')">1</button>
+                <button class="btn-number" onclick="updateCalculation('2')">2</button>
+                <button class="btn-number" onclick="updateCalculation('3')">3</button>
+                <button class="btn-special" onclick="updateCalculation('+')">+</button>
+
+                <button class="btn-number" onclick="updateCalculation('4')">4</button>
+                <button class="btn-number" onclick="updateCalculation('5')">5</button>
+                <button class="btn-number" onclick="updateCalculation('6')">6</button>
+                <button class="btn-special" onclick="updateCalculation('-')">-</button>
+
+                <button class="btn-number" onclick="updateCalculation('7')">7</button>
+                <button class="btn-number" onclick="updateCalculation('8')">8</button>
+                <button class="btn-number" onclick="updateCalculation('9')">9</button>
+                <button class="btn-special" onclick="updateCalculation('*')">*</button>
+
+                <button class="btn-special" onclick="updateCalculation('.')">.</button>
+                <button class="btn-number" onclick="updateCalculation('0')">0</button>
+                <button class="btn-as" onclick="calualatResult()">=</button>
+
+                <button class="btn-clear" onclick="clearDisplay()">Clear</button>
+                <button class="btn-del" onclick="deleteLastCharacter()">Del</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
